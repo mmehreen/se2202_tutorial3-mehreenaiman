@@ -26,6 +26,16 @@ let getDictionary = function (lang)
             3 -> three
             use all small characters
         */       
+       switch (number)
+       {
+           case (1): 
+                return "one";
+           case (2):
+                return "two"
+           case (3): 
+                return "three";
+       }
+        
     }
 
     /*
@@ -40,19 +50,41 @@ let getDictionary = function (lang)
             2 -> deux
             3 -> trois
             use all small characters
-        */       
+        */  
+       
+            switch (number)
+       {
+           case (1): 
+                return "um";
+           case (2):
+                return "deux";
+           case (3): 
+                return "trois";
+       }
+
+       return not; 
     }
 
     /*
         Write an if-statement that would return either the engishDictionary or the frenchDictionary 
         based on the value of the argument 'lang'
     */
+
+        if (lang == 'E') 
+        {
+            return englishDictionary;
+        }
+
+        if (lang == 'F')
+        {
+            return frenchDictionary;
+        }
 }
 
 
 // Call the getDictionay function in a way that allows us to use the binding names below as the corresponding dictionary function
-let english; 
-let french;
+let english = englishDictionary('E'); 
+let french = frenchDictionary('F');
 
 
 // DO NOT change the lines below

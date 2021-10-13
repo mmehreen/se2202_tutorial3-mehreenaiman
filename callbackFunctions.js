@@ -1,36 +1,30 @@
 let even_predicat = function (value)
 {
-    /* check whether the value is even 
-     (a number is even when the remainder of its division by 2 is equal to 0)
-     return true if the value is even or false when the value is odd 
-   */
+    if (value%2==0)
+    return true; 
+    else return false;
 };
 
 let odd_predicat = function (value)
 {
-    /*
-    check whether the value is odd 
-     return true if the value is even or false when the value is odd
-    */ 
+    if (value%2==0)
+    return false; 
+    else return true;
 };
 
 let undefined_predicate = function (value)
 {
-    /* 
-        check and return a boolean value to indicate 
-        whether the given value is undefined
-         (be careful with the implicit coercion) 
-    */
+    if (value === undefined)
+    return true; 
+    else return false; 
 
 };
 
 let null_predicate = function (value)
 {
-    /* 
-        check and return a boolean value to indicate 
-        whether the given value is null
-         (be careful with the implicit coercion) 
-    */
+    if (value === null)
+    return true;
+    else return false;
     
 };
 
@@ -39,15 +33,15 @@ let null_predicate = function (value)
 // and a value to check using the given predicate
 let check = function (predicat,value)
 {
-    // apply the predicate to the value and return the result
+    return predicat(value);
 };
 
 
 // fix notes in the repo.
-console.log(/* call the check function here to check whether 9 is even */);
-console.log(/* call the check function here to check whether 9 is odd */);
-console.log( /* call the check function here to check whether 8 is even */);
-console.log(/* call the check function here to check whether 8 is odd */);
+console.log(even_predicat(9));
+console.log(odd_predicat(9));
+console.log(even_predicat(8));
+console.log(odd_predicat(8));
 let x;
-console.log(/* call the check function here to check whether x is undefined */);
-console.log(/* call the check function here to check whether x is null */);
+console.log(check(undefined_predicate,x));
+console.log(check(null_predicate,x));
