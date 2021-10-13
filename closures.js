@@ -6,11 +6,10 @@ let powerOf = function (power) {
     {
         result *= base;
     }
-    return result; 
-    return innerfunction;
+    
    }
-     
-
+   return result; 
+   return innerfunction;
 };
 
 let powerOfTwo = powerOf(2); // set this variable to a closure that would raise any value to two.

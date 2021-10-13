@@ -30,7 +30,7 @@ let null_predicate = function (value)
 
 
 //We're defining a function that takes predicate function to 'callback' 
-// and a value to check using the given predicate
+// and a value to check using the given predicate//
 let check = function (predicat,value)
 {
     return predicat(value);

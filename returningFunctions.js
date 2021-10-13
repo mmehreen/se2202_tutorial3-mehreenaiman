@@ -14,7 +14,7 @@ let getDictionary = function (lang)
     */
 
     /*
-        Complete the definition of the englishDictionary function
+        Complete the definition of the englishDictionary function/
     */
     let englishDictionary = function (number)
     {
